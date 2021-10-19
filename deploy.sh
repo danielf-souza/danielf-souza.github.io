@@ -15,15 +15,15 @@ MESSAGE="Site rebuild $(date)"
 msg() {
     printf "\033[1;32m :: %s\n\033[0m" "$1"
 }
-msg "Pulling down the \`master\` branch into \`public\` to help avoid merge conflicts"
+msg "Pulling down the \`main\` branch into \`public\` to help avoid merge conflicts"
 git subtree pull --prefix=public \
-    git@github.com:danielf-souza/danielf-souza.github.io.git origin master -m "Merge origin master"
+    git@github.com:danielf-souza/danielf-souza.github.io.git origin main -m "Merge origin main"
 msg "Building the website"
 hugo
 msg "Pushing the updated \`public\` folder to the \`sources\` branch"
 git add public
 git commit -m "$MESSAGE"
 git push origin "sources"
-msg "Pushing the updated \`public\` folder to the \`master\` branch"
+msg "Pushing the updated \`public\` folder to the \`main\` branch"
 git subtree push --prefix=public \
-    git@github.com:danielf-souza/danielf-souza.github.io.git master
+    git@github.com:danielf-souza/danielf-souza.github.io.git main
