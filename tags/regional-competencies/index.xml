@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Regional Competencies | Daniel Souza</title>
-    <link>http://localhost:4321/tags/regional-competencies/</link>
-      <atom:link href="http://localhost:4321/tags/regional-competencies/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://danielf-souza.github.io/tags/regional-competencies/</link>
+      <atom:link href="https://danielf-souza.github.io/tags/regional-competencies/index.xml" rel="self" type="application/rss+xml" />
     <description>Regional Competencies</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 18 Aug 2024 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:4321/media/icon_hu1765442434206927891.png</url>
+      <url>https://danielf-souza.github.io/media/icon_hu1765442434206927891.png</url>
       <title>Regional Competencies</title>
-      <link>http://localhost:4321/tags/regional-competencies/</link>
+      <link>https://danielf-souza.github.io/tags/regional-competencies/</link>
     </image>
     
     <item>
       <title>AI research in Canadian hospitals: The development of metropolitan competencies</title>
-      <link>http://localhost:4321/work-in-progress/pelletier_2024/</link>
+      <link>https://danielf-souza.github.io/work-in-progress/pelletier_2024/</link>
       <pubDate>Sun, 18 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/work-in-progress/pelletier_2024/</guid>
+      <guid>https://danielf-souza.github.io/work-in-progress/pelletier_2024/</guid>
       <description></description>
     </item>
     

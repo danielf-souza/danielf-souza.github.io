@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Manuscript | Daniel Souza</title>
-    <link>http://localhost:4321/publication_types/manuscript/</link>
-      <atom:link href="http://localhost:4321/publication_types/manuscript/index.xml" rel="self" type="application/rss+xml" />
+    <link>https://danielf-souza.github.io/publication_types/manuscript/</link>
+      <atom:link href="https://danielf-souza.github.io/publication_types/manuscript/index.xml" rel="self" type="application/rss+xml" />
     <description>Manuscript</description>
     <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 18 Aug 2024 00:00:00 +0000</lastBuildDate>
     <image>
-      <url>http://localhost:4321/media/icon_hu1765442434206927891.png</url>
+      <url>https://danielf-souza.github.io/media/icon_hu1765442434206927891.png</url>
       <title>Manuscript</title>
-      <link>http://localhost:4321/publication_types/manuscript/</link>
+      <link>https://danielf-souza.github.io/publication_types/manuscript/</link>
     </image>
     
     <item>
       <title>AI research in Canadian hospitals: The development of metropolitan competencies</title>
-      <link>http://localhost:4321/work-in-progress/pelletier_2024/</link>
+      <link>https://danielf-souza.github.io/work-in-progress/pelletier_2024/</link>
       <pubDate>Sun, 18 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/work-in-progress/pelletier_2024/</guid>
+      <guid>https://danielf-souza.github.io/work-in-progress/pelletier_2024/</guid>
       <description></description>
     </item>
     
     <item>
       <title>How Small is Big Enough? Open Labeled Datasets and the Development of Deep Learning</title>
-      <link>http://localhost:4321/work-in-progress/souza_geuna_rodriguez_2024/</link>
+      <link>https://danielf-souza.github.io/work-in-progress/souza_geuna_rodriguez_2024/</link>
       <pubDate>Sun, 18 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/work-in-progress/souza_geuna_rodriguez_2024/</guid>
+      <guid>https://danielf-souza.github.io/work-in-progress/souza_geuna_rodriguez_2024/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Mapping new knowledge: Using novelty measures critically</title>
-      <link>http://localhost:4321/work-in-progress/iori_2024/</link>
+      <link>https://danielf-souza.github.io/work-in-progress/iori_2024/</link>
       <pubDate>Sun, 18 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/work-in-progress/iori_2024/</guid>
+      <guid>https://danielf-souza.github.io/work-in-progress/iori_2024/</guid>
       <description></description>
     </item>
     
     <item>
       <title>The Emergence of the Economics of Science: Evidence from the WOEPS workshop (2007-2023)</title>
-      <link>http://localhost:4321/work-in-progress/souza_geuna_lawson_2024/</link>
+      <link>https://danielf-souza.github.io/work-in-progress/souza_geuna_lawson_2024/</link>
       <pubDate>Sun, 18 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:4321/work-in-progress/souza_geuna_lawson_2024/</guid>
+      <guid>https://danielf-souza.github.io/work-in-progress/souza_geuna_lawson_2024/</guid>
       <description></description>
     </item>
     
