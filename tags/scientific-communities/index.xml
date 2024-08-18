@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Scientific Communities | Daniel Souza</title>
+    <link>https://danielf-souza.github.io/tags/scientific-communities/</link>
+      <atom:link href="https://danielf-souza.github.io/tags/scientific-communities/index.xml" rel="self" type="application/rss+xml" />
+    <description>Scientific Communities</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 18 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://danielf-souza.github.io/media/icon_hu1765442434206927891.png</url>
+      <title>Scientific Communities</title>
+      <link>https://danielf-souza.github.io/tags/scientific-communities/</link>
+    </image>
+    
+    <item>
+      <title>The Emergence of the Economics of Science: Evidence from the WOEPS workshop (2007-2023)</title>
+      <link>https://danielf-souza.github.io/work-in-progress/souza_geuna_lawson_2024/</link>
+      <pubDate>Sun, 18 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://danielf-souza.github.io/work-in-progress/souza_geuna_lawson_2024/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

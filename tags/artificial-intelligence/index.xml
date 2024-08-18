@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Artificial Intelligence | Daniel Souza</title>
+    <link>https://danielf-souza.github.io/tags/artificial-intelligence/</link>
+      <atom:link href="https://danielf-souza.github.io/tags/artificial-intelligence/index.xml" rel="self" type="application/rss+xml" />
+    <description>Artificial Intelligence</description>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 18 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <image>
+      <url>https://danielf-souza.github.io/media/icon_hu1765442434206927891.png</url>
+      <title>Artificial Intelligence</title>
+      <link>https://danielf-souza.github.io/tags/artificial-intelligence/</link>
+    </image>
+    
+    <item>
+      <title>AI research in Canadian hospitals: The development of metropolitan competencies</title>
+      <link>https://danielf-souza.github.io/work-in-progress/pelletier_2024/</link>
+      <pubDate>Sun, 18 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://danielf-souza.github.io/work-in-progress/pelletier_2024/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>How Small is Big Enough? Open Labeled Datasets and the Development of Deep Learning</title>
+      <link>https://danielf-souza.github.io/work-in-progress/souza_geuna_rodriguez_2024/</link>
+      <pubDate>Sun, 18 Aug 2024 00:00:00 +0000</pubDate>
+      <guid>https://danielf-souza.github.io/work-in-progress/souza_geuna_rodriguez_2024/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
