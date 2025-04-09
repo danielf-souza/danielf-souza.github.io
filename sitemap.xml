@@ -50,6 +50,10 @@
     <lastmod>2024-08-18T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
+    <loc>http://localhost:1313/publication_types/article-journal/</loc>
+    <lastmod>2024-08-18T00:00:00+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>http://localhost:1313/tags/artificial-intelligence/</loc>
     <lastmod>2024-08-18T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -227,10 +231,6 @@
     <changefreq>weekly</changefreq>
   </url><url>
     <loc>http://localhost:1313/tags/academic-career/</loc>
-    <lastmod>2022-09-14T00:00:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-  </url><url>
-    <loc>http://localhost:1313/publication_types/article-journal/</loc>
     <lastmod>2022-09-14T00:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
