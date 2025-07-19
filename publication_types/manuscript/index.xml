@@ -5,7 +5,7 @@
     <link>http://localhost:1313/publication_types/manuscript/</link>
       <atom:link href="http://localhost:1313/publication_types/manuscript/index.xml" rel="self" type="application/rss+xml" />
     <description>Manuscript</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 18 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sat, 19 Jul 2025 00:00:00 +0000</lastBuildDate>
     <image>
       <url>http://localhost:1313/media/icon_hu_84232612148bca32.png</url>
       <title>Manuscript</title>
@@ -13,26 +13,34 @@
     </image>
     
     <item>
+      <title>Building a Scientific Community? The WOEPS Workshop and the Evolution of the Economics of Science, 1994–2023</title>
+      <link>http://localhost:1313/work-in-progress/souza_geuna_lawson_2025/</link>
+      <pubDate>Sat, 19 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/work-in-progress/souza_geuna_lawson_2025/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Empirical Analysis of Quantity and Quality of Rural Entrepreneurship in France, Germany and UK: Understanding Key Enabling Factors</title>
+      <link>http://localhost:1313/work-in-progress/souza_colombo_sasso_et_al_2025/</link>
+      <pubDate>Sat, 19 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/work-in-progress/souza_colombo_sasso_et_al_2025/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>The State of European Entrepreneurship: Trends in Quantity and Quality in France, Germany, and the UK (2009–2023)</title>
+      <link>http://localhost:1313/work-in-progress/souza_colombo_hottenrott_et_al_2025/</link>
+      <pubDate>Sat, 19 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/work-in-progress/souza_colombo_hottenrott_et_al_2025/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>How Small is Big Enough? Open Labeled Datasets and the Development of Deep Learning</title>
       <link>http://localhost:1313/work-in-progress/souza_geuna_rodriguez_2024/</link>
       <pubDate>Sun, 18 Aug 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/work-in-progress/souza_geuna_rodriguez_2024/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Mapping new knowledge: Using novelty measures critically</title>
-      <link>http://localhost:1313/work-in-progress/iori_2024/</link>
-      <pubDate>Sun, 18 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/work-in-progress/iori_2024/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>The Emergence of the Economics of Science: Evidence from the WOEPS workshop (2007-2023)</title>
-      <link>http://localhost:1313/work-in-progress/souza_geuna_lawson_2024/</link>
-      <pubDate>Sun, 18 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/work-in-progress/souza_geuna_lawson_2024/</guid>
       <description></description>
     </item>
     
