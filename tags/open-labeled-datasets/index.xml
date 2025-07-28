@@ -5,7 +5,7 @@
     <link>http://localhost:1313/tags/open-labeled-datasets/</link>
       <atom:link href="http://localhost:1313/tags/open-labeled-datasets/index.xml" rel="self" type="application/rss+xml" />
     <description>Open Labeled Datasets</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 18 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 18 Jul 2025 00:00:00 +0000</lastBuildDate>
     <image>
       <url>http://localhost:1313/media/icon_hu_84232612148bca32.png</url>
       <title>Open Labeled Datasets</title>
@@ -14,9 +14,9 @@
     
     <item>
       <title>How Small is Big Enough? Open Labeled Datasets and the Development of Deep Learning</title>
-      <link>http://localhost:1313/work-in-progress/souza_geuna_rodriguez_2024/</link>
-      <pubDate>Sun, 18 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/work-in-progress/souza_geuna_rodriguez_2024/</guid>
+      <link>http://localhost:1313/publication/souza_geuna_rodriguez_2024/</link>
+      <pubDate>Fri, 18 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/souza_geuna_rodriguez_2024/</guid>
       <description></description>
     </item>
     

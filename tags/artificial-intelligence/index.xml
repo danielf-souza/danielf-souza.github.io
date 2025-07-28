@@ -5,7 +5,7 @@
     <link>http://localhost:1313/tags/artificial-intelligence/</link>
       <atom:link href="http://localhost:1313/tags/artificial-intelligence/index.xml" rel="self" type="application/rss+xml" />
     <description>Artificial Intelligence</description>
-    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Sun, 18 Aug 2024 00:00:00 +0000</lastBuildDate>
+    <generator>Hugo Blox Builder (https://hugoblox.com)</generator><language>en-us</language><lastBuildDate>Fri, 18 Jul 2025 00:00:00 +0000</lastBuildDate>
     <image>
       <url>http://localhost:1313/media/icon_hu_84232612148bca32.png</url>
       <title>Artificial Intelligence</title>
@@ -13,18 +13,18 @@
     </image>
     
     <item>
-      <title>AI research in Canadian hospitals: The development of metropolitan competencies</title>
-      <link>http://localhost:1313/publication/pelletier_2024/</link>
-      <pubDate>Sun, 18 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/publication/pelletier_2024/</guid>
+      <title>How Small is Big Enough? Open Labeled Datasets and the Development of Deep Learning</title>
+      <link>http://localhost:1313/publication/souza_geuna_rodriguez_2024/</link>
+      <pubDate>Fri, 18 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/souza_geuna_rodriguez_2024/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>How Small is Big Enough? Open Labeled Datasets and the Development of Deep Learning</title>
-      <link>http://localhost:1313/work-in-progress/souza_geuna_rodriguez_2024/</link>
+      <title>AI research in Canadian hospitals: The development of metropolitan competencies</title>
+      <link>http://localhost:1313/publication/pelletier_2024/</link>
       <pubDate>Sun, 18 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/work-in-progress/souza_geuna_rodriguez_2024/</guid>
+      <guid>http://localhost:1313/publication/pelletier_2024/</guid>
       <description></description>
     </item>
     

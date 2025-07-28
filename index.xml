@@ -39,7 +39,7 @@
     <item>
       <title>Building a Scientific Community? The WOEPS Workshop and the Evolution of the Economics of Science, 1994–2023</title>
       <link>http://localhost:1313/work-in-progress/souza_geuna_lawson_2025/</link>
-      <pubDate>Sat, 19 Jul 2025 00:00:00 +0000</pubDate>
+      <pubDate>Mon, 21 Jul 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/work-in-progress/souza_geuna_lawson_2025/</guid>
       <description></description>
     </item>
@@ -57,6 +57,22 @@
       <link>http://localhost:1313/work-in-progress/souza_colombo_hottenrott_et_al_2025/</link>
       <pubDate>Sat, 19 Jul 2025 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/work-in-progress/souza_colombo_hottenrott_et_al_2025/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>How Small is Big Enough? Open Labeled Datasets and the Development of Deep Learning</title>
+      <link>http://localhost:1313/publication/souza_geuna_rodriguez_2024/</link>
+      <pubDate>Fri, 18 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/publication/souza_geuna_rodriguez_2024/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mapping new knowledge: Using novelty measures critically</title>
+      <link>http://localhost:1313/work-in-progress/iori_2024/</link>
+      <pubDate>Fri, 18 Jul 2025 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/work-in-progress/iori_2024/</guid>
       <description></description>
     </item>
     
@@ -81,14 +97,6 @@
       <link>http://localhost:1313/publication/pelletier_2024/</link>
       <pubDate>Sun, 18 Aug 2024 00:00:00 +0000</pubDate>
       <guid>http://localhost:1313/publication/pelletier_2024/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>How Small is Big Enough? Open Labeled Datasets and the Development of Deep Learning</title>
-      <link>http://localhost:1313/work-in-progress/souza_geuna_rodriguez_2024/</link>
-      <pubDate>Sun, 18 Aug 2024 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/work-in-progress/souza_geuna_rodriguez_2024/</guid>
       <description></description>
     </item>
     
@@ -331,7 +339,7 @@
 
 
 
-&lt;div id=&#34;chart-937865142&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
+&lt;div id=&#34;chart-723869415&#34; class=&#34;chart&#34;&gt;&lt;/div&gt;
 &lt;script&gt;
   async function fetchChartJSON() {
     console.debug(&#39;Hugo Blox fetching chart JSON...&#39;)
@@ -349,7 +357,7 @@
 
       fetchChartJSON().then(chart =&gt; {
         console.debug(&#39;Plotting chart...&#39;)
-        window.Plotly.newPlot(&#39;chart-937865142&#39;, chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot(&#39;chart-723869415&#39;, chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
