@@ -10,20 +10,13 @@ main:
   - name: Experience
     url: experience/
     weight: 11
-  - name: Publications
-    url: publication/
-    weight: 12
-  - name: Work in Progress
-    url: work-in-progress/
-    weight: 13
+  - name: Research
+    url: research/
+    weight: 14
   - name: Teaching
     url: teaching/
     weight: 30
   - name: CV
     url: files/cv_souza.pdf
     weight: 40
-  - name: Contact
-    url: /#contact
-    weight: 50
-
 
