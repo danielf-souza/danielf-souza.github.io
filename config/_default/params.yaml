@@ -1,0 +1,70 @@
+# SITE SETUP
+# Guide: https://docs.hugoblox.com/tutorial/
+# Documentation: https://docs.hugoblox.com/
+# This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
+
+# Appearance
+appearance:
+  mode: system
+  color: red
+  font: serif
+
+# SEO
+marketing:
+  seo:
+    site_type: Person
+    local_business_type: ''
+    org_name: ''
+    description: ''
+    twitter: ''
+  analytics:
+    google_analytics: ''
+    baidu_tongji: ''
+    plausible: ''
+    fathom: ''
+    pirsch: ''
+  verification:
+    google: ''
+    baidu: ''
+
+# Site header
+header:
+  navbar:
+    enable: true
+    blox: "navbar"
+    # Align menu links: `left`, `center`, or `right`
+    align: "right"
+    fixed_to_top: true
+    show_search: true
+    show_theme_chooser: true
+    # Attempt to automatically highlight the active menu link? Can be disabled for complex sites.
+    highlight_active_link: true
+    logo:
+      text: "DANIEL SOUZA"
+
+
+# Site footer
+footer:
+  copyright:
+    notice: ''
+    license:
+      enable: false
+      allow_derivatives: false
+      share_alike: false
+      allow_commercial: false
+
+# Localization
+locale:
+  date_format: 'Jan 2, 2006'
+  time_format: '3:04 PM'
+
+# Site features
+features:
+  math:
+    enable: false
+  privacy_pack:
+    enable: false
+
+# Append custom JavaScript
+plugins_js: 
+  - custom
