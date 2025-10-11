@@ -15,7 +15,7 @@ authors:
 #  - 'Equal contribution'
 
 date: '2025-07-18T00:00:00Z'
-doi: '10.48550/arXiv.2408.10359'
+doi: '10.1093/icc/dtaf044'
 
 # Schedule page publish date (NOT publication's date).
 publishDate: '2025-07-28T00:00:00Z'

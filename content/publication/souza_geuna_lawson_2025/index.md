@@ -15,7 +15,7 @@ authors:
 #  - 'Equal contribution'
 
 date: '2025-07-21T00:00:00Z'
-doi: ''
+doi: '10.1080/10438599.2025.2571618'
 
 # Schedule page publish date (NOT publication's date).
 publishDate: '2025-07-21T00:00:00Z'

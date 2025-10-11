@@ -28,9 +28,9 @@ publishDate: '2025-07-19T00:00:00Z'
 publication_types: ["manuscript"]
 
 # Publication name and optional abbreviated publication name.
-publication: In preparation - *Special Issue of European Economic Review*.
+publication: Submitted - *Special Issue of European Economic Review*.
 
-publication_short: In preparation - *European Economic Review*
+publication_short: Submitted - *European Economic Review*
 
 abstract:  This paper investigates the quantity and quality of entrepreneurial activity across rural and urban regions in France, Germany, and the United Kingdom between 2009 and 2023. Using comprehensive business registry data and a predictive analytics framework, we estimate both the number of new firm registrations (entrepreneurial quantity) and the growth potential of these ventures (entrepreneurial quality). Our analysis reveals substantial heterogeneity in entrepreneurial outcomes across countries and regions in Europe. While factors such as GDP per capita, access to venture capital, and educational attainment are positively associated with higher-quality entrepreneurship in urban areas, these relationships are significantly weaker in rural regions. These findings underscore the importance of ecosystem-wide support strategies tailored to regional contexts, offering valuable insights for policymakers aiming to foster high-growth entrepreneurship.
 
@@ -50,7 +50,7 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'preprint_souza_geuna_lawson_2025.pdf'
+url_pdf: ''
 url_code: ''
 url_dataset: ''
 url_poster: ''
