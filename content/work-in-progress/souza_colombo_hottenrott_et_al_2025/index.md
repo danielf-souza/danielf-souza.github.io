@@ -28,14 +28,14 @@ publishDate: '2025-07-19T00:00:00Z'
 publication_types: ["manuscript"]
 
 # Publication name and optional abbreviated publication name.
-publication: Submitted - *Special Issue of European Economic Review*.
+publication: Submitted - *European Economic Review*.
 
 publication_short: Submitted - *European Economic Review*
 
-abstract:  This paper investigates the quantity and quality of entrepreneurial activity across rural and urban regions in France, Germany, and the United Kingdom between 2009 and 2023. Using comprehensive business registry data and a predictive analytics framework, we estimate both the number of new firm registrations (entrepreneurial quantity) and the growth potential of these ventures (entrepreneurial quality). Our analysis reveals substantial heterogeneity in entrepreneurial outcomes across countries and regions in Europe. While factors such as GDP per capita, access to venture capital, and educational attainment are positively associated with higher-quality entrepreneurship in urban areas, these relationships are significantly weaker in rural regions. These findings underscore the importance of ecosystem-wide support strategies tailored to regional contexts, offering valuable insights for policymakers aiming to foster high-growth entrepreneurship.
+abstract:  This paper replicates and extends the framework of Guzman and Stern (2020) to examine the evolution of entrepreneurial activity in Europe, focusing on France, Germany, and the United Kingdom between 2009 and 2023. Using harmonized national business registry data, we construct measures of both the quantity and quality of entrepreneurship across regions. In particular, we adapt the Entrepreneurial Quality Index (EQI), the Regional Entrepreneurship Cohort Potential Index (RECPI), and the Regional Entrepreneurial Acceleration Index (REAI) to capture the number of new ventures, their ex-ante growth potential, and the extent to which ecosystems translate this potential into realized outcomes. Our findings support the generalizability of this framework in the European context while revealing substantial heterogeneity across countries and regions. Major metropolitan centers such as Paris, London, and Munich combine high rates of entry with high entrepreneurial quality, but smaller knowledge- and research-intensive regions -- including Cambridge, Oxford, Bonn, and Heidelberg -- also emerge as important hubs. With respect to ecosystem performance, France and the UK initially exceeded expectations but later experienced steady declines, whereas Germany maintained relatively stable performance, with notable overperformance between 2012 and 2016. Moreover, we find a stronger positive correlation between entrepreneurial quantity and quality in Europe, suggesting that ecosystems capable of generating more start-ups are also more likely to produce high-quality firms. This study provides important insights for the comparative analysis of entrepreneurial ecosystems and builds a foundation for designing policies aimed at fostering high-quality, innovation-driven entrepreneurship in Europe.
 
 # Summary. An optional shortened abstract.
-summary:  This paper investigates the quantity and quality of entrepreneurial activity across rural and urban regions in France, Germany, and the United Kingdom between 2009 and 2023.
+summary:  This paper investigates the quantity and quality of entrepreneurial activity across in France, Germany, and the United Kingdom between 2009 and 2023.
 
 tags:
   - Entrepreneurial Ecosystem
