@@ -16,11 +16,11 @@ authors:
 #  - 'Equal contribution'
 #  - 'Equal contribution'
 
-date: '2025-10-11T00:00:00Z'
+date: '2025-10-21T00:00:00Z'
 doi: ''
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2025-07-19T00:00:00Z'
+publishDate: '2025-10-21T00:00:00Z'
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
@@ -46,11 +46,11 @@ tags:
 featured: true
 
 # Custom links (uncomment lines below)
-# links:
-# - name: Custom Link
-#   url: http://example.org
+links:
+ - name: Working Paper
+   url: https://www.zew.de/en/publications/the-state-of-european-entrepreneurship-trends-in-quantity-and-quality-in-france-germany-and-the-uk-2009-2023
 
-url_pdf: ''
+url_pdf: 'wp_state_entrepreneurship_europe_2025.pdf'
 url_code: ''
 url_dataset: ''
 url_poster: ''
