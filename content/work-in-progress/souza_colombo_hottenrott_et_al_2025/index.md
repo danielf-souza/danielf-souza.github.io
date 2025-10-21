@@ -50,7 +50,7 @@ links:
  - name: Working Paper
    url: https://www.zew.de/en/publications/the-state-of-european-entrepreneurship-trends-in-quantity-and-quality-in-france-germany-and-the-uk-2009-2023
 
-url_pdf: 'wp_state_entrepreneurship_europe_2025.pdf'
+url_pdf: 'https://ftp.zew.de/pub/zew-docs/dp/dp25052.pdf'
 url_code: ''
 url_dataset: ''
 url_poster: ''
