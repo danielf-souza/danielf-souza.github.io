@@ -18,7 +18,7 @@ date: '2025-07-18T00:00:00Z'
 doi: '10.1093/icc/dtaf044'
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2025-07-28T00:00:00Z'
+publishDate: '2025-10-24T00:00:00Z'
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
@@ -49,7 +49,7 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'souza_geuna_rodriguez_2024.pdf'
+url_pdf: 'files/souza_et_al_2025_how_small_is_big_enough.pdf'
 url_code: ''
 url_dataset: ''
 url_poster: ''
