@@ -49,7 +49,7 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: 'https://www.carloalberto.org/wp-content/uploads/2025/07/no.745.pdf'
+url_pdf: 'https://www.tandfonline.com/eprint/W5MRACTKANGUHBCDYZ4I/full?target=10.1080/10438599.2025.2571618'
 url_code: ''
 url_dataset: ''
 url_poster: ''
