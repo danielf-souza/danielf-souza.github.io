@@ -1,5 +1,5 @@
 ---
-title: 'Projects'
+title: 'Teaching'
 date: 2024-05-19
 type: landing
 
@@ -12,7 +12,8 @@ sections:
   - block: collection
     content:
       title: Teaching
-      text: 
+      text:
+      count: 0
       filters:
         folders:
           - teaching
