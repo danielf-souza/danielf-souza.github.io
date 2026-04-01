@@ -79,6 +79,8 @@ work:
     date_end: ''
     summary: |
       Visiting Scholar at the <a href=https://www.mioir.manchester.ac.uk/>Manchester Institute of Innovation Research</a>, University of Manchester, Fall 2024.
+      
+      Visiting Scholar at the <a href=https://www.ritm.universite-paris-saclay.fr/> RITM Research Center in Economics and Management</a>, Université Paris-Saclay, Spring 2026.
   - position: Postdoctoral Researcher
     company_name: University of Turin
     company_url: ''
