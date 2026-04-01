@@ -6,7 +6,6 @@ title: 'Mapping new knowledge: Using novelty measures critically'
 # and it will be replaced with their full name and linked to their profile.
 authors:
   - Martina Iori
-  - Pierre Pelletier
   - admin
   - Magda Fontana
   - Aldo Geuna
@@ -16,11 +15,11 @@ authors:
 #  - 'Equal contribution'
 #  - 'Equal contribution'
 
-date: '2025-07-18T00:00:00Z'
+date: '2026-01-02T00:00:00Z'
 doi: ''
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2025-07-18T00:00:00Z'
+publishDate: '2026-01-02T00:00:00Z'
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
@@ -28,9 +27,9 @@ publishDate: '2025-07-18T00:00:00Z'
 publication_types: ["manuscript"]
 
 # Publication name and optional abbreviated publication name.
-publication: ''
+publication: '*In preparation - Research Policy*'
 
-publication_short: ''
+publication_short: '*In preparation - Research Policy*'
 
 abstract:  ''
 

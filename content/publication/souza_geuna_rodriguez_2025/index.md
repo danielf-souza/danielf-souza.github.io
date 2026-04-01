@@ -28,7 +28,7 @@ publication_types: ["article-journal"]
 # Publication name and optional abbreviated publication name.
 publication: "*Industrial and Corporate Change*, 34(6)"
 
-publication_short: "*Industrial and Corporate Change*, 34(6) - 2025"
+publication_short: "*Industrial and Corporate Change*, 34(6)"
 
 abstract:  We investigate the emergence of Deep Learning as a technoscientific field, emphasizing the role of open labeled datasets. Through qualitative and quantitative analyses, we evaluate the role of datasets like CIFAR-10 in advancing computer vision and object recognition, which are central to the Deep Learning revolution. Our findings highlight CIFAR-10's crucial role and enduring influence on the field, as well as its importance in teaching ML techniques. Results also indicate that dataset characteristics such as size, number of instances, and number of categories, were key factors. Econometric analysis confirms that CIFAR-10, a small-but-sufficiently-large open dataset, played a significant and lasting role in technological advancements and had a major function in the development of the early scientific literature as shown by citation metrics.
 

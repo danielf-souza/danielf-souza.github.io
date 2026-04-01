@@ -17,11 +17,11 @@ authors:
 #  - 'Equal contribution'
 #  - 'Equal contribution'
 
-date: '2025-07-19T00:00:00Z'
+date: '2026-01-19T00:00:00Z'
 doi: ''
 
 # Schedule page publish date (NOT publication's date).
-publishDate: '2025-07-19T00:00:00Z'
+publishDate: '2026-01-19T00:00:00Z'
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
@@ -29,11 +29,11 @@ publishDate: '2025-07-19T00:00:00Z'
 publication_types: ["manuscript"]
 
 # Publication name and optional abbreviated publication name.
-publication: ''
+publication: "*Submitted - Technological Forecasting and Social Change*"
 
-publication_short: ''
+publication_short: "*Submitted - Technological Forecasting and Social Change*"
 
-abstract:  ''
+abstract:  'Entrepreneurship plays a critical role in fostering economic development and regional resilience. This study examines the nature and determinants of rural entrepreneurship across the UK, France, and Germany, focusing on both the quantity of new business formation and the quality of entrepreneurial activity, as proxied by growth-oriented start-ups. Using harmonized regional-level data, we identify key structural and ecosystem factors associated with rural entrepreneurship and assess the role of urban–rural spillovers and geographic remoteness. The analysis reveals substantial variation across countries and highlights the limited predictive power of traditional ecosystem components such as venture capital, innovation output, and human capital. In contrast, proximity to urban centers and linkages with non-rural entrepreneurial activity emerge as robust drivers of rural entrepreneurship. The findings offer novel insights for designing context-sensitive policies to support high-potential ventures in rural areas and promote more inclusive regional innovation systems.'
 
 # Summary. An optional shortened abstract.
 summary: ''
@@ -64,7 +64,7 @@ url_video: ''
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
 image:
-  caption: ''
+  caption: 'Average Quality of Rural Entrepreneurial Activity x 10,000'
   focal_point: ''
   preview_only: false
 
