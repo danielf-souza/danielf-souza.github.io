@@ -1,5 +1,5 @@
 ---
-title: 'High-potential Entrepreneurship in European Rural Areas'
+title: 'Rural Entrepreneurship in Europe: Understanding Key Enabling Factors'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
