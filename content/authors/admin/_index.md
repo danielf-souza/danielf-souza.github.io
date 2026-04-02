@@ -133,6 +133,6 @@ languages:
 #    summary: |
 #      Object-oriented programming (OOP) lets you specify relationships between functions and the objects that they can act on, helping you manage complexity in your code. This is an intermediate level course, providing an introduction to OOP, using the S3 and R6 systems. S3 is a great day-to-day R programming tool that simplifies some of the functions that you write. R6 is especially useful for industry-specific analyses, working with web APIs, and building GUIs.
 ---
-I'm an assistant professor at the Polytechnic University of Milan. My research interests lie broadly at the intersection of economics, science & technology studies, focusing on topics such as university-industry collaboration, open science and the dynamics of scientific collaborations.
+I am an Assistant Professor at the Polytechnic University of Milan. My research focuses on the economics of science and innovation, studying how knowledge is produced, organized, and diffused across scientific and technological domains. I examine scientific collaboration, open science, and university–industry interactions, with a particular interest in how emerging technologies such as artificial intelligence and quantum computing shape science and innovation. My work combines network analysis, machine learning, and causal inference to analyze the evolution of research fields and the determinants of entrepreneurship and knowledge creation.
 
 Email: danielfernando.desouza [at] polimi [dot] it
