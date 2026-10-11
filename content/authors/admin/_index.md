@@ -100,7 +100,7 @@ education:
     date_end: 2022-06-06
     details:
       - 'Thesis: _Essays on the Economics of Science_'
-      - 'Advisor: <a href="https://www.didattica-est.unito.it/do/docenti.pl/Alias?magda.fontana#tab-profilo">Prof. Magda Fontana</a>'
+      - 'Advisor: <a href="https://www.est.unito.it/do/docenti.pl/Show?_id=mfontana#tab-profilo">Prof. Magda Fontana</a>'
   - area: M.Sc. in Development Economics
     year: 2017
     institution: Federal University of Paraná
