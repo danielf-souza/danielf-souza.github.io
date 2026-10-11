@@ -1,0 +1,103 @@
+{{/* Hugo Blox: Experience CUSTOM */}}
+{{/* Renders Experience, Academic Visits and Education timelines from the author profile, following the CV layout. */}}
+{{/* Based on the Hugo Blox `resume-experience` block: https://hugoblox.com/blocks/ */}}
+
+{{/* Initialise */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+
+{{ $author := $block.content.username | default "admin" }}
+{{ $person_page_path := (printf "/authors/%s" $author) }}
+{{ $person_page := site.GetPage $person_page_path }}
+{{ if not $person_page }}
+  {{ errorf "Could not find an author page at `%s`. Please check the value of `username` in your Experience block and create an associated author page if one does not already exist." $person_page_path }}
+{{end}}
+{{ $person := $person_page.Params }}
+{{ $date_format := $block.design.date_format | default "2006" }}
+
+{{/* Sections are rendered in this order. Each reads a list from the author profile. */}}
+{{/* `lead: institution` puts the institution first: institution / department / role and host / period. */}}
+{{ $sections := slice
+  (dict "title" "Academic Positions" "items" $person.work "icon" "briefcase")
+  (dict "title" "Academic Visits" "items" $person.visits "icon" "globe-europe-africa" "lead" "institution")
+  (dict "title" (i18n "education" | default "Education") "items" $person.education "icon" "academic-cap")
+}}
+
+<div class="flex flex-col items-center max-w-prose mx-auto">
+<div class="flex flex-col gap-y-6 w-full px-6 sm:px-0">
+
+{{ range $section := $sections }}
+{{ if $section.items }}
+<div class="w-full">
+  <h3 class="mb-6 text-3xl font-bold text-gray-900 dark:text-white">{{ $section.title }}</h3>
+  <ol class="relative border-s border-gray-200 dark:border-gray-700">
+    {{ range $section.items }}
+    {{/* Work entries use `position`/`company_name`/`company_url`; education uses `area`/`institution`. */}}
+    {{ $title := .position | default .area }}
+    {{ $institution := .company_name | default .institution }}
+    {{ $url := .company_url | default .url }}
+
+    {{/* Institution (linked when a URL is given), followed by its location. */}}
+    {{ $institution_html := htmlEscape $institution }}
+    {{ with $url }}{{ $institution_html = printf `<a href="%s" target="_blank" rel="noopener" class="hover:underline">%s</a>` (htmlEscape .) $institution_html }}{{ end }}
+    {{ with .location }}{{ $institution_html = printf "%s, %s" $institution_html (htmlEscape .) }}{{ end }}
+    {{ $department_html := "" }}
+    {{ with .department }}{{ $department_html = $page.RenderString . }}{{ end }}
+
+    {{/* Default order: title / institution / department. Institution-led: institution / department / role and host. */}}
+    {{ $heading := htmlEscape $title }}
+    {{ $line2 := cond $institution $institution_html "" }}
+    {{ $line3 := $department_html }}
+    {{ if eq $section.lead "institution" }}
+      {{ $role := htmlEscape $title }}
+      {{ $host_url := .host_url }}
+      {{ with .host }}
+        {{ $host := htmlEscape . }}
+        {{ with $host_url }}{{ $host = printf `<a href="%s" target="_blank" rel="noopener" class="hover:underline">%s</a>` (htmlEscape .) $host }}{{ end }}
+        {{ $role = printf "%s, Host: %s" $role $host }}
+      {{ end }}
+      {{ $heading = $institution_html }}
+      {{ $line2 = $department_html }}
+      {{ $line3 = $role }}
+    {{ end }}
+
+    {{/* `period` is free text (e.g. "Fall 2024"); otherwise build it from `date_start`/`date_end`. */}}
+    {{ $period := .period }}
+    {{ if and (not $period) .date_start }}
+      {{ $start := (time .date_start) | time.Format $date_format }}
+      {{ $end := i18n "present" | default "Present" }}
+      {{ with .date_end }}{{ $end = (time .) | time.Format $date_format }}{{ end }}
+      {{ $period = cond (eq $start $end) $start (printf "%s – %s" $start $end) }}
+    {{ end }}
+
+    <li class="mb-10 ms-6">
+      <span class="absolute flex items-center justify-center w-6 h-6 bg-primary-100 rounded-full -start-3 ring-8 ring-white dark:ring-gray-900 dark:bg-primary-900">
+        {{ partial "functions/get_icon" (dict "name" $section.icon "attributes" "class=\"w-4 h-4 text-primary-800 dark:text-primary-300\"") }}
+      </span>
+      <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">{{ $heading | safeHTML }}</h3>
+      {{ with $line2 }}
+      <span class="block mb-1 text-base font-medium text-gray-700 dark:text-gray-300">{{ . | safeHTML }}</span>
+      {{ end }}
+      {{ with $line3 }}
+      <span class="block mb-1 text-sm text-gray-500 dark:text-gray-400">{{ . | safeHTML }}</span>
+      {{ end }}
+      {{ with $period }}
+      <time class="block mb-2 text-sm italic text-gray-500 dark:text-gray-400">{{ . }}</time>
+      {{ end }}
+      {{ with .details }}
+      <ul class="space-y-1 text-sm text-gray-600 dark:text-gray-300">
+        {{ range . }}<li>{{ . | $page.RenderString }}</li>{{ end }}
+      </ul>
+      {{ end }}
+      {{ with .summary }}
+      <div class="mt-2 text-base font-normal text-gray-500 dark:text-gray-300 prose prose-slate dark:prose-invert">{{ . | $page.RenderString }}</div>
+      {{ end }}
+    </li>
+    {{ end }}
+  </ol>
+</div>
+{{ end }}
+{{ end }}
+
+</div>
+</div>
