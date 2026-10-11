@@ -50,44 +50,76 @@ interests:
   - Network Analysis
   - Economic Complexity
 
-# Education to show in Experience Tab
-education:
-  - area: PhD in Economics, 2022
-    institution: University of Turin & Collegio Carlo Alberto
-    date_start: 2017-09-01
-    date_end: 2022-06-06
-    summary: |
-      Thesis: _Essays on the Economics of Science_. Supervised by <a href=https://www.didattica-est.unito.it/do/docenti.pl/Alias?magda.fontana#tab-profilo>Prof. Magda Fontana</a>.
-  - area: MSc in Development Economics, 2017
-    institution: Federal University of Paraná
-    date_start: 2015-03-01
-    date_end: 2017-03-27
-    summary: ''
-  - area: BSc in Economics, 2015
-    institution: Federal University of Minas Gerais
-    date_start: 2010-01-01
-    date_end: 2015-01-07
-    summary: |
-      Exchange semester at <a href=https://eco.univ-rennes.fr/>Université de Rennes I</a> (France), Spring 2013.
-# Work to show in Experience Tab
+# Experience page (content/experience.md): Academic Positions, Academic Visits and Education.
+# Entries follow the CV layout: title, institution + location, department, period, then detail lines.
+#   - `period` is free text (e.g. "Fall 2024"); without it, the years of `date_start`–`date_end` are shown.
+#   - `department` and each `details` line accept Markdown; write links as HTML (<a href="...">...</a>),
+#     since Markdown links render empty with this theme.
+
+# Academic Positions
 work:
   - position: Assistant Professor
     company_name: Polytechnic University of Milan
     company_url: https://www.polimi.it/en/
-    company_logo: ''
+    location: Italy
+    department: Department of Management, Economics and Industrial Engineering
     date_start: 2023-10-10
     date_end: ''
-    summary: |
-      Visiting Scholar at the <a href=https://www.mioir.manchester.ac.uk/>Manchester Institute of Innovation Research</a>, University of Manchester, Fall 2024.
-      
-      Visiting Scholar at the <a href=https://www.ritm.universite-paris-saclay.fr/> RITM Research Center in Economics and Management</a>, Université Paris-Saclay, Spring 2026.
-  - position: Postdoctoral Researcher
+  - position: Postdoctoral Research Fellow
     company_name: University of Turin
-    company_url: ''
-    company_logo: ''
+    company_url: https://www.unito.it/
+    location: Italy
+    department: Department of Culture, Politics and Society
     date_start: 2022-01-01
     date_end: 2023-09-26
-    summary: ''
+
+# Academic Visits (shown as: institution / department / position, host / period)
+visits:
+  - institution: Université Paris-Saclay
+    url: https://www.universite-paris-saclay.fr/en
+    department: '<a href="https://www.ritm.universite-paris-saclay.fr/">RITM Research Center in Economics and Management</a>'
+    position: Visiting Scholar
+    host: Felipe de Starosta Waldemar
+    host_url: https://www.ritm.universite-paris-saclay.fr/profil/felipe.starosta-de-waldemar/
+    period: Spring 2026
+  - institution: University of Manchester
+    url: https://www.manchester.ac.uk/
+    department: '<a href="https://www.mioir.manchester.ac.uk/">Manchester Institute of Innovation Research</a>'
+    position: Visiting Scholar
+    host: Cornelia Lawson
+    host_url: https://research.manchester.ac.uk/en/persons/cornelia.lawson
+    period: Fall 2024
+
+# Education (also shown on the home page, as "area, year" and "institution")
+education:
+  - area: Ph.D. in Economics
+    year: 2022
+    institution: University of Turin & Collegio Carlo Alberto
+    location: Italy
+    date_start: 2017-09-01
+    date_end: 2022-06-06
+    details:
+      - 'Thesis: _Essays on the Economics of Science_'
+      - 'Advisor: <a href="https://www.didattica-est.unito.it/do/docenti.pl/Alias?magda.fontana#tab-profilo">Prof. Magda Fontana</a>'
+  - area: M.Sc. in Development Economics
+    year: 2017
+    institution: Federal University of Paraná
+    location: Brazil
+    date_start: 2015-03-01
+    date_end: 2017-03-27
+    details:
+      - "Thesis: _The Microfoundations of Evolutionary Economics' demand side: An Adaptive Model of Consumer Choice_"
+      - 'Advisor: Prof. Adriana Sbicca Fernandes'
+  - area: B.Sc. in Economics
+    year: 2015
+    institution: Federal University of Minas Gerais
+    location: Brazil
+    date_start: 2010-01-01
+    date_end: 2015-01-07
+    details:
+      - 'Thesis: _O Homo economicus no século XXI: a emergência de um novo conceito de indivíduo?_'
+      - 'Advisor: Prof. Carlos Eduardo Suprinyak'
+      - 'Exchange semester at <a href="https://eco.univ-rennes.fr/">University of Rennes I</a>, France, Spring 2013'
 
 
 languages:
