@@ -17,6 +17,6 @@ main:
     url: teaching/
     weight: 30
   - name: CV
-    url: files/cv_souza.pdf
+    url: 'https://polimi365-my.sharepoint.com/:b:/g/personal/11017079_polimi_it/IQBg707-OmdTRrCL6_GvDeuxAec1eI2toAOMR_WIlIhJO1A?e=Az0p6J'
     weight: 40
 

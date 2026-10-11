@@ -17,7 +17,7 @@ sections:
       # Show a call-to-action button under your biography? (optional)
       button:
         text: Download CV
-        url: files/cv_souza.pdf
+        url: 'https://polimi365-my.sharepoint.com/:b:/g/personal/11017079_polimi_it/IQBg707-OmdTRrCL6_GvDeuxAec1eI2toAOMR_WIlIhJO1A?e=Az0p6J'
     design:
       css_class: light
       background:
