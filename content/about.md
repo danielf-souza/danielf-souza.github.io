@@ -1,7 +1,9 @@
 ---
-title: 'Experience'
+title: 'About'
 date: 2023-10-24
 type: landing
+# The old /experience/ address redirects here via static/experience/index.html,
+# since Hugo aliases are disabled (disableAliases in config/_default/hugo.yaml).
 
 design:
   spacing: '5rem'
@@ -10,10 +12,12 @@ design:
 
 # Page sections
 sections:
-  # Academic Positions, Academic Visits and Education (edit them in `content/authors/admin/_index.md`)
+  # Bio text, then Academic Positions, Academic Visits and Education (edit them in `content/authors/admin/_index.md`)
   - block: resume-experience-custom
     content:
       username: admin
+      # Show the bio text (the body of the author page) above the timelines
+      show_bio: true
     design:
       # Hugo date format (years only, as in the CV)
       date_format: '2006'

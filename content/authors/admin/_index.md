@@ -50,7 +50,7 @@ interests:
   - Network Analysis
   - Economic Complexity
 
-# Experience page (content/experience.md): Academic Positions, Academic Visits and Education.
+# About page (content/about.md): the bio text at the end of this file, then Academic Positions, Academic Visits and Education.
 # Entries follow the CV layout: title, institution + location, department, period, then detail lines.
 #   - `period` is free text (e.g. "Fall 2024"); without it, the years of `date_start`–`date_end` are shown.
 #   - `department` and each `details` line accept Markdown; write links as HTML (<a href="...">...</a>),
