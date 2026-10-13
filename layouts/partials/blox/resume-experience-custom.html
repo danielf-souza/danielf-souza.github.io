@@ -26,6 +26,12 @@
 <div class="flex flex-col items-center max-w-prose mx-auto">
 <div class="flex flex-col gap-y-6 w-full px-6 sm:px-0">
 
+{{ if $block.content.show_bio }}
+{{ with $person_page.Content }}
+<div class="prose prose-slate lg:prose-xl dark:prose-invert max-w-prose mb-6">{{ . }}</div>
+{{ end }}
+{{ end }}
+
 {{ range $section := $sections }}
 {{ if $section.items }}
 <div class="w-full">
