@@ -305,3 +305,253 @@ code, pre {
         display: none;
     }
 }
+
+/* Home page hero (layouts/partials/blox/profile-hero.html): portrait beside name, tagline, buttons and icons. */
+.profile-hero {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    max-width: 54rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.profile-hero__photo {
+    flex: 0 0 18rem;
+}
+
+.profile-hero__photo img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    border: 1px solid rgb(229 231 235);
+    border-radius: 0.75rem;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 0.08);
+}
+
+.profile-hero__body {
+    flex: 1;
+    min-width: 0;
+}
+
+.profile-hero__name {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: rgb(17 24 39);
+}
+
+.profile-hero__role {
+    margin-top: 0.75rem;
+    font-size: 1rem;
+    color: rgb(75 85 99);
+}
+
+.profile-hero__role a:hover {
+    text-decoration: underline;
+}
+
+.profile-hero__tagline {
+    margin-top: 1.25rem;
+    font-size: 1.3rem;
+    line-height: 1.55;
+    color: rgb(75 85 99);
+}
+
+.profile-hero__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1.75rem;
+}
+
+.profile-hero__button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 5.5rem;
+    padding: 0.7rem 2rem;
+    border: 1px solid transparent;
+    border-radius: 0.5rem;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: background-color 0.15s ease;
+}
+
+.profile-hero__button--primary {
+    background: rgb(var(--color-primary-700));
+    color: #fff;
+}
+
+.profile-hero__button--primary:hover {
+    background: rgb(var(--color-primary-800));
+}
+
+.profile-hero__button--secondary {
+    background: #fff;
+    border-color: rgb(229 231 235);
+    color: rgb(17 24 39);
+}
+
+.profile-hero__button--secondary:hover {
+    background: rgb(249 250 251);
+}
+
+.profile-hero__icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1.75rem 0 0 -0.6rem;
+    padding: 0;
+    list-style: none;
+}
+
+.profile-hero__icons a {
+    display: flex;
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    color: rgb(75 85 99);
+}
+
+.profile-hero__icons a:hover {
+    background: rgb(243 244 246);
+    color: rgb(var(--color-primary-700));
+}
+
+.profile-hero__icons svg {
+    width: 1.25rem;
+    height: 1.25rem;
+}
+
+/* Contact card under the hero: email and office on one row, postal address below a divider. */
+.profile-contact {
+    max-width: 51rem;
+    margin: 3rem auto 0;
+    padding: 1.25rem 1.5rem;
+    background: #fff;
+    border: 1px solid rgb(229 231 235);
+    border-radius: 0.75rem;
+}
+
+.profile-contact__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.75rem 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgb(229 231 235);
+}
+
+.profile-contact__item {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.6rem;
+    color: rgb(55 65 81);
+}
+
+a.profile-contact__item[href]:hover span {
+    text-decoration: underline;
+}
+
+.profile-contact__item svg {
+    flex: none;
+    width: 1.15rem;
+    height: 1.15rem;
+    color: rgb(107 114 128);
+}
+
+.profile-contact__address {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+    color: rgb(75 85 99);
+}
+
+.dark .profile-hero__photo img {
+    border-color: rgb(55 65 81);
+}
+
+.dark .profile-hero__name {
+    color: #fff;
+}
+
+.dark .profile-hero__role,
+.dark .profile-hero__tagline,
+.dark .profile-hero__icons a,
+.dark .profile-contact__address {
+    color: rgb(209 213 219);
+}
+
+.dark .profile-hero__button--primary {
+    background: rgb(var(--color-primary-600));
+}
+
+.dark .profile-hero__button--primary:hover {
+    background: rgb(var(--color-primary-700));
+}
+
+.dark .profile-hero__button--secondary {
+    background: rgb(31 41 55);
+    border-color: rgb(55 65 81);
+    color: rgb(243 244 246);
+}
+
+.dark .profile-hero__button--secondary:hover,
+.dark .profile-hero__icons a:hover {
+    background: rgb(55 65 81);
+}
+
+.dark .profile-hero__icons a:hover {
+    color: #fff;
+}
+
+.dark .profile-contact {
+    background: rgb(31 41 55);
+    border-color: rgb(55 65 81);
+}
+
+.dark .profile-contact__row {
+    border-color: rgb(55 65 81);
+}
+
+.dark .profile-contact__item {
+    color: rgb(229 231 235);
+}
+
+.dark .profile-contact__item svg {
+    color: rgb(156 163 175);
+}
+
+/* Phones and small tablets: portrait above the text, contact lines stacked. */
+@media (max-width: 767px) {
+    .profile-hero {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 2rem;
+    }
+
+    .profile-hero__photo {
+        flex-basis: auto;
+        width: 100%;
+        max-width: 16rem;
+        margin: 0 auto;
+    }
+
+    .profile-hero__name {
+        font-size: 2.25rem;
+    }
+
+    .profile-hero__tagline {
+        font-size: 1.15rem;
+    }
+
+    .profile-contact {
+        margin: 2.5rem 1.5rem 0;
+    }
+
+    .profile-contact__row {
+        flex-direction: column;
+    }
+}

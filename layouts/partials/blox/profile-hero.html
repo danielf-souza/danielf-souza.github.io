@@ -1,0 +1,91 @@
+{{/* Profile hero: portrait, name, one-sentence tagline, Contact and CV buttons, profile icons, and a contact card. */}}
+{{/* Styles live in assets/css/custom.css (.profile-hero, .profile-contact). */}}
+
+{{/* Initialise */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+
+{{ $author := $block.content.username | default "admin" }}
+{{ $person_page_path := (printf "/authors/%s" $author) }}
+{{ $person_page := site.GetPage $person_page_path }}
+{{ if not $person_page }}
+  {{ errorf "Could not find an author page at `%s`. Please check the value of `username` in your profile-hero block." $person_page_path }}
+{{end}}
+{{ $person := $person_page.Params }}
+{{ $avatar := ($person_page.Resources.ByType "image").GetMatch "*avatar*" }}
+{{ $contact := $block.content.contact }}
+
+<div class="profile-hero">
+  {{ with $avatar }}
+  {{/* 3:4 portrait crop of the avatar */}}
+  {{ $photo := .Fill "600x800 Center webp" }}
+  <div class="profile-hero__photo">
+    <img src="{{ $photo.RelPermalink }}" width="{{ $photo.Width }}" height="{{ $photo.Height }}" alt="{{ $person_page.Title }}">
+  </div>
+  {{ end }}
+
+  <div class="profile-hero__body">
+    <h1 class="profile-hero__name">{{ $person_page.Title }}</h1>
+
+    {{ with $person.role }}
+    <p class="profile-hero__role">
+      {{ . | markdownify | emojify }}{{ range first 1 $person.organizations }}, {{ with .url }}<a href="{{ . }}" target="_blank" rel="noopener">{{ end }}{{ .name }}{{ if .url }}</a>{{ end }}{{ end }}
+    </p>
+    {{ end }}
+
+    {{ with $block.content.text }}
+    <p class="profile-hero__tagline">{{ . | $page.RenderString }}</p>
+    {{ end }}
+
+    <div class="profile-hero__buttons">
+      {{ with $contact.email }}
+      <a class="profile-hero__button profile-hero__button--primary" href="mailto:{{ . }}">{{ $block.content.contact_button | default "Contact" }}</a>
+      {{ end }}
+      {{ with $block.content.cv_url }}
+      <a class="profile-hero__button profile-hero__button--secondary" href="{{ . }}" target="_blank" rel="noopener">CV</a>
+      {{ end }}
+    </div>
+
+    {{/* Profile icons, except email links: the Contact button covers those. */}}
+    <ul class="profile-hero__icons">
+      {{ range $person.profiles }}
+      {{ $link := .url | default .link }}
+      {{ if not (hasPrefix $link "mailto:") }}
+      <li>
+        <a href="{{ $link | safeURL }}" target="_blank" rel="noopener" aria-label="{{ .label | default (path.Base .icon) }}">
+          {{ partial "functions/get_icon" (dict "name" .icon "attributes" "aria-hidden=\"true\"") }}
+        </a>
+      </li>
+      {{ end }}
+      {{ end }}
+    </ul>
+  </div>
+</div>
+
+{{ with $contact }}
+<div class="profile-contact">
+  <div class="profile-contact__row">
+    {{ with .email }}
+    <a class="profile-contact__item" href="mailto:{{ . }}">
+      {{ partial "functions/get_icon" (dict "name" "envelope" "attributes" "aria-hidden=\"true\"") }}
+      <span>{{ . }}</span>
+    </a>
+    {{ end }}
+    {{ with .phone }}
+    <a class="profile-contact__item" href="tel:{{ replace . " " "" }}">
+      {{ partial "functions/get_icon" (dict "name" "phone" "attributes" "aria-hidden=\"true\"") }}
+      <span>{{ . }}</span>
+    </a>
+    {{ end }}
+    {{ with .office }}
+    <a class="profile-contact__item" {{ with $contact.office_url }}href="{{ . }}" target="_blank" rel="noopener"{{ end }}>
+      {{ partial "functions/get_icon" (dict "name" "map-pin" "attributes" "aria-hidden=\"true\"") }}
+      <span>{{ . }}</span>
+    </a>
+    {{ end }}
+  </div>
+  {{ with .address }}
+  <p class="profile-contact__address">{{ . }}</p>
+  {{ end }}
+</div>
+{{ end }}
