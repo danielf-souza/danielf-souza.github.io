@@ -1,5 +1,5 @@
 ---
-title: 'AI research in Canadian hospitals: The development of metropolitan competencies'
+title: 'Artificial intelligence research in Canadian hospitals: The development of metropolitan competencies'
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
@@ -14,7 +14,7 @@ authors:
 #  - 'Equal contribution'
 #  - 'Equal contribution'
 
-date: '2024-08-18T00:00:00Z'
+date: '2024-11-01T00:00:00Z'
 doi: '10.1177/08404704241271218'
 
 # Schedule page publish date (NOT publication's date).
@@ -26,9 +26,9 @@ publishDate: '2024-08-18T00:00:00Z'
 publication_types: ["article-journal"]
 
 # Publication name and optional abbreviated publication name.
-publication: "*Healthcare Management Forum*, 37(6)"
+publication: "*Healthcare Management Forum*, 37(6), 445–450"
 
-publication_short: ""
+publication_short: "*Healthcare Management Forum*, 37(6), 445–450"
 
 abstract:  This study explores the deployment of artificial intelligence in Canadian hospitals from 2000 to 2021, focusing on metropolitan areas. We investigate how local public and private research ecosystems and links to national and international AI hubs influence the adoption of AI in healthcare. Our analysis shows that AI research outputs from public institutions have a significant impact on AI competences in hospitals. In addition, collaborations between hospitals are critical to the successful integration of AI. Metropolitan areas such as Toronto, Montreal and Vancouver are leading the way in AI deployment. These findings highlight the importance of local AI research capabilities and international hospital collaborations, and provide guidance to policymakers and healthcare leaders to drive the diffusion of AI technology in healthcare.
 

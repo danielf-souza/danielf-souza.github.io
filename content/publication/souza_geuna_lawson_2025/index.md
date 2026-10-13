@@ -14,7 +14,7 @@ authors:
 #  - 'Equal contribution'
 #  - 'Equal contribution'
 
-date: '2025-07-21T00:00:00Z'
+date: '2026-08-18T00:00:00Z'
 doi: '10.1080/10438599.2025.2571618'
 
 # Schedule page publish date (NOT publication's date).
@@ -26,9 +26,9 @@ publishDate: '2025-07-21T00:00:00Z'
 publication_types: ["article-journal"]
 
 # Publication name and optional abbreviated publication name.
-publication: "*Economics of Innovation and New Technology*"
+publication: "*Economics of Innovation and New Technology*, 35(6), 1047–1088"
 
-publication_short: "*Economics of Innovation and New Technology*"
+publication_short: "*Economics of Innovation and New Technology*, 35(6), 1047–1088"
 
 abstract:  The paper studies the development of the Economics of Science as a new emerging field in the social sciences during the period 1994-2023. To identify the community of scholars working on this new scientific topic, we examine authors citing two seminal papers and use network analysis to investigate the cognitive and organizational characteristics of the community of authors. Our findings suggest that the Economics of Science is still in the process of becoming an independent and cohesive field, exhibiting a highly fragmented structure. We also study the role of the "Workshop on the Organisation, Economics, and Policy of Scientific Research" (WOEPS), initiated in 2007, for the Economics of Science community. We show that WOEPS presenters have more economists of science as coauthors and are better positioned to connect different clusters of authors in the wider Economics of Science network than other members of the network, highlighting its importance for linking scholars in the field. We also show that WOEPS papers are published in higher "quality" journals, receive relatively more citations, and significantly more citations from within the Economics of Science field compared to other Economics of Science papers.
 
