@@ -1,6 +1,11 @@
 ---
 title: "Research"
 type: landing
+
+design:
+  # Section spacing
+  spacing: '4rem'
+
 sections:
   - block: collection
     content:
@@ -10,7 +15,7 @@ sections:
         folders:
           - publication
     design:
-      view: citation
+      view: research
 
   - block: collection
     content:
@@ -20,5 +25,5 @@ sections:
         folders:
           - work-in-progress
     design:
-      view: citation
+      view: research
 ---
