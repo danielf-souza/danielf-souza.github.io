@@ -23,6 +23,8 @@ marketing:
     plausible: ''
     fathom: ''
     pirsch: ''
+    # GoatCounter site code, e.g. `mycode` for https://mycode.goatcounter.com
+    goatcounter: 'danielf-souza'
   verification:
     google: ''
     baidu: ''
