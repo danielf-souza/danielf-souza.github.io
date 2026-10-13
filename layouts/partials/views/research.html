@@ -5,9 +5,10 @@
 {{ $item := .item }}
 {{ $link := $item.RelPermalink }}
 
-{{/* Thumbnail: fit the whole figure (no cropping), since featured images are plots and networks. */}}
+{{/* Thumbnail: a `thumbnail.*` image in the page folder if present (e.g. a crop of a detailed figure), */}}
+{{/* else the featured image. Fit the whole image (no cropping), since figures are plots and maps. */}}
 {{ $image := "" }}
-{{ with partial "functions/get_featured_image.html" $item }}
+{{ with ($item.Resources.ByType "image").GetMatch "thumbnail.*" | default (partial "functions/get_featured_image.html" $item) }}
   {{ $image = .Fit "640x480" }}
   {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "webp" }}{{ end }}
 {{ end }}
