@@ -35,7 +35,7 @@ header:
     # Align menu links: `left`, `center`, or `right`
     align: "right"
     fixed_to_top: true
-    show_search: true
+    show_search: false
     show_theme_chooser: true
     # Attempt to automatically highlight the active menu link? Can be disabled for complex sites.
     highlight_active_link: true
