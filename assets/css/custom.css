@@ -31,35 +31,6 @@ nav#navbar-main li.nav-item {
   font-weight: bold;
 }
 
-.resume-biography {
-    gap: 10%; /* Adjust the gap between flex items */
-}
-
-/* Adjust the positioning of the avatar and icons */
-.avatar-wrapper {
-    margin-top: -40px; /* Adjust the top margin as needed */
-    margin-left: 2.5%; /* Adjust the left margin as needed */
-}
-
-.portrait-title {
-    margin-top: 25%; /* Adjust the top margin as needed */
-    margin-left: 0%; /* Adjust the left margin as needed */
-}
-
-.network-icon li {
-    margin-top: 10px; /* Adjust the top margin as needed */
-}
-
-.flex-auto {
-    margin-top: -40px; /* Adjust the top margin as needed */
-}
-
-.bio-text {
-/*    max-width: 900px; /* Increase this value to make the text box wider */
-    margin: 0 auto; /* Center the text box */
-  }
-
-
 /* Apply CSS variables */
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--heading-font);

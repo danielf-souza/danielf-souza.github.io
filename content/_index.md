@@ -9,72 +9,19 @@ design:
   spacing: "3rem"
 
 sections:
-  - block: resume-biography-custom
+  # Portrait, name, tagline, Contact and CV buttons, profile icons and contact card
+  # (layouts/partials/blox/profile-hero.html). Name, role and icons come from `content/authors/admin/`.
+  - block: profile-hero
     content:
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: admin
-      text: ""
-      # Show a call-to-action button under your biography? (optional)
-      button:
-        text: Download CV
-        url: 'https://polimi365-my.sharepoint.com/:b:/g/personal/11017079_polimi_it/IQBg707-OmdTRrCL6_GvDeuxAec1eI2toAOMR_WIlIhJO1A?e=Az0p6J'
-    design:
-      css_class: light
-      background:
-        color: light
-        image:
-          # Add your image background to `assets/media/`.
-          filename: 
-          filters:
-            brightness: 1.0
-          size: cover
-          position: center
-          parallax: false
-  - block: collection
-    content:
-      title: Recent Publications
-      # Choose how many pages you would like to display (0 = all pages)
-      count: 3
-      text: ""
-      filters:
-        folders:
-          - publication
-        exclude_featured: false
-    design:
-      view: citation
-  - block: collection
-    id: work-in-progress
-    content:
-      title: Work in Progress
-      # Choose how many pages you would like to display (0 = all pages)
-      count: 3
-      text: ""
-      filters:
-        folders:
-          - work-in-progress
-        exclude_featured: false
-    design:
-      view: citation       
-  - block: markdown
-    id: contact
-    content:
-      title: Contact
-      text: |-
-        Please reach out in case you have any questions or want to talk about research.
-        
-        #### Email
-        danielfernando.desouza [at] polimi [dot] it
-        
-        
-        #### Address
-        Department of Management, Economics and Industrial Engineering\
-        Polytechnic University of Milan\
-        Via Lambruschini, 4b, 20156\
-        Milan, Italy
-      filters:
-        folders:
-          - contact
-        exclude_featured: false
-    design:
-      view: citation
+      # One sentence on your research, shown under your name
+      text: I study how scientific knowledge is produced, organized, and diffused, and how emerging technologies such as artificial intelligence are reshaping science and innovation.
+      cv_url: 'https://polimi365-my.sharepoint.com/:b:/g/personal/11017079_polimi_it/IQBg707-OmdTRrCL6_GvDeuxAec1eI2toAOMR_WIlIhJO1A?e=Az0p6J'
+      # Contact card. The Contact button emails `email`. Add `phone` to show a phone line.
+      contact:
+        email: danielfernando.desouza@polimi.it
+        office: Via Lambruschini 4b, Milan
+        office_url: 'https://maps.google.com/?q=Via+Lambruschini+4b,+20156+Milano'
+        address: Department of Management, Economics and Industrial Engineering, Polytechnic University of Milan, Via Lambruschini 4b, 20156 Milan, Italy
 ---
