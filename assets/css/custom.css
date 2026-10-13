@@ -77,6 +77,30 @@ code, pre {
     font-family: var(--mono-font);
 }
 
+/* Paper pages: featured image caption below the figure, not over it, so it can't hide axes or legends. */
+.article-header-caption {
+    position: static;
+    display: block;
+    margin-top: 0.6rem;
+    padding: 0;
+    font-size: 0.9rem;
+    line-height: 1.4;
+    text-align: center;
+    color: rgb(75 85 99);
+    background: none;
+    opacity: 1;
+    border-radius: 0;
+}
+
+.article-header-caption a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.dark .article-header-caption {
+    color: rgb(156 163 175);
+}
+
 /* Research view (layouts/partials/views/research.html) */
 .pub-research-list {
     width: 100%;
