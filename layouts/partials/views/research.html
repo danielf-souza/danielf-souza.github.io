@@ -1,0 +1,47 @@
+{{/* Hugo Blox View: Research */}}
+{{/* Paper list with a figure thumbnail, title, authors (year), venue, collapsible abstract and links. */}}
+{{/* Use it in a `collection` block with `design: {view: research}`. Styles live in `assets/css/custom.css`. */}}
+
+{{ $item := .item }}
+{{ $link := $item.RelPermalink }}
+
+{{/* Thumbnail: fit the whole figure (no cropping), since featured images are plots and networks. */}}
+{{ $image := "" }}
+{{ with partial "functions/get_featured_image.html" $item }}
+  {{ $image = .Fit "640x480" }}
+  {{ if ne $image.MediaType.SubType "gif" }}{{ $image = $image.Process "webp" }}{{ end }}
+{{ end }}
+
+<article class="pub-research">
+  <a href="{{ $link }}" class="pub-research__media{{ if not $image }} pub-research__media--empty{{ end }}" tabindex="-1" aria-hidden="true">
+    {{ with $image }}
+      <img src="{{ .RelPermalink }}" width="{{ .Width }}" height="{{ .Height }}" loading="lazy" alt="">
+    {{ else }}
+      {{ partial "functions/get_icon" (dict "name" "document-text" "attributes" "class='pub-research__placeholder'") }}
+    {{ end }}
+  </a>
+
+  <div class="pub-research__body">
+    <h3 class="pub-research__title"><a href="{{ $link }}">{{ $item.Title }}</a></h3>
+
+    <div class="pub-research__authors">
+      {{ partial "page_metadata_authors" $item }} ({{ $item.Date.Format "2006" }})
+    </div>
+
+    {{ with $item.Params.publication_short | default $item.Params.publication }}
+      <div class="pub-research__venue">{{ . | markdownify }}</div>
+    {{ end }}
+
+    {{ with $item.Params.abstract }}
+      <details class="pub-research__abstract">
+        <summary>Abstract</summary>
+        <div class="pub-research__abstract-text">{{ . | markdownify }}</div>
+      </details>
+    {{ end }}
+
+    {{/* Render the links first so entries without any don't get an empty row. */}}
+    {{ with partial "page_links" (dict "page" $item "is_list" 1) | strings.TrimSpace }}
+      <div class="pub-research__links">{{ . | safeHTML }}</div>
+    {{ end }}
+  </div>
+</article>
