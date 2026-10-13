@@ -62,7 +62,7 @@ url_video: ''
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder.
 image:
-  caption: 'Average Quality of Entrepreneurial Activity in Selected Functional Urban Areas in France'
+  caption: 'Quantity (bubble size, % of country total) and quality (colour, country percentile) of entrepreneurship in France, Germany and the UK'
   focal_point: ''
   preview_only: false
 
