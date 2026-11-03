@@ -1,9 +1,12 @@
 ---
 title: Econometrics
 date: 2023-10-01
-external_link: https://www.didattica-est.unito.it/do/storicocorsi.pl/Show?_id=u0v3_2223
+period: 2022/23
+institution: University of Turin
+role: Teaching assistant
+level: BSc
+# The archived course page (didattica-est.unito.it, storicocorsi u0v3_2223) no longer exists, so there is no `external_link`.
 tags:
-  - UniTO
   - Econometrics
   - Statistics
 ---

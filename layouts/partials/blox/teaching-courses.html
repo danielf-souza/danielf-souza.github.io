@@ -1,0 +1,75 @@
+{{/* Hugo Blox: Teaching Courses */}}
+{{/* Lists the course pages in a content folder (default `teaching`) under Current Courses, Past Courses and Short Courses & Workshops. */}}
+{{/* Each course: title and period, institution, then role · level and programme · format · ECTS · language, summary and links. */}}
+{{/* Course front matter: `current` (true puts it under Current Courses), `short_course` (true puts it under Short Courses & Workshops), */}}
+{{/* `period` (free text, e.g. "2024/25 – present"), `institution`, `role`, `level`, `programme`, `format`, `credits`, `language`, */}}
+{{/* `external_link` (shown as "Course page", or `link_label`), plus any `url_pdf`, `url_slides`, `url_code` or `links` for materials. */}}
+{{/* Courses are ordered by weight, then newest date first. */}}
+{{/* Styles live in assets/css/custom.css (.teaching). */}}
+
+{{/* Initialise */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+
+{{ $folder := $block.content.folder | default "teaching" }}
+{{ $pages := where site.RegularPages "Section" $folder }}
+{{ $courses := where $pages "Params.short_course" "!=" true }}
+{{ $groups := slice
+  (dict "title" "Current Courses" "items" (where $courses "Params.current" true))
+  (dict "title" "Past Courses" "items" (where $courses "Params.current" "!=" true))
+  (dict "title" "Short Courses & Workshops" "items" (where $pages "Params.short_course" true))
+}}
+
+<div class="teaching">
+  {{ with $block.content.title }}
+  <h2 class="teaching__title">{{ . | emojify | $page.RenderString }}</h2>
+  {{ end }}
+  {{ with $block.content.text }}
+  <p class="teaching__intro">{{ . | emojify | $page.RenderString }}</p>
+  {{ end }}
+
+  {{ range $groups }}
+  {{ if .items }}
+  <section class="teaching__group">
+    <h3 class="teaching__group-title">{{ .title }}</h3>
+
+    {{ range .items }}
+    {{ $params := .Params }}
+
+    {{/* Details line: role · level and programme · format · ECTS · language, skipping whatever is not set. */}}
+    {{ $programme := slice }}
+    {{ range slice $params.level $params.programme }}{{ with . }}{{ $programme = $programme | append . }}{{ end }}{{ end }}
+    {{ $credits := "" }}
+    {{ with $params.credits }}{{ $credits = printf "%v ECTS" . }}{{ end }}
+    {{ $details := slice }}
+    {{ range slice $params.role (delimit $programme " ") $params.format $credits $params.language }}{{ with . }}{{ $details = $details | append . }}{{ end }}{{ end }}
+
+    {{/* `summary` front matter (Markdown), else the text before `<!--more-->` (already HTML). */}}
+    {{ $summary := .Summary }}
+    {{ with $params.summary }}{{ $summary = $page.RenderString . }}{{ end }}
+
+    <article class="teaching-course">
+      <div class="teaching-course__head">
+        <h4 class="teaching-course__title">{{ .Title }}</h4>
+        {{ with $params.period }}<span class="teaching-course__period">{{ . }}</span>{{ end }}
+      </div>
+
+      {{ with $params.institution }}<div class="teaching-course__institution">{{ . }}</div>{{ end }}
+      {{ with $details }}<div class="teaching-course__details">{{ delimit . " · " }}</div>{{ end }}
+      {{ with $summary }}<div class="teaching-course__summary">{{ . }}</div>{{ end }}
+
+      {{/* Render the links first so courses without any don't get an empty row. */}}
+      {{ $links := partial "page_links" (dict "page" . "is_list" 1) | strings.TrimSpace }}
+      {{ with $params.external_link }}
+        {{ $course_link := printf `<a class="hb-attachment-link hb-attachment-small" href="%s" target="_blank" rel="noopener">%s %s</a>` . (partial "functions/get_icon" (dict "name" "arrow-top-right-on-square" "attributes" "style=\"height: 1em\" class='inline-block'")) ($params.link_label | default "Course page") }}
+        {{ $links = printf "%s%s" $course_link $links }}
+      {{ end }}
+      {{ with $links }}
+      <div class="teaching-course__links">{{ . | safeHTML }}</div>
+      {{ end }}
+    </article>
+    {{ end }}
+  </section>
+  {{ end }}
+  {{ end }}
+</div>

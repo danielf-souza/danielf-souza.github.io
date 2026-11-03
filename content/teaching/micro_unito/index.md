@@ -1,9 +1,15 @@
 ---
 title: Microeconomics
 date: 2022-08-26
+period: 2021/22
+institution: University of Turin
+role: Lecturer
+level: BSc
+programme: Business Economics
+credits: 8
+language: Italian
 external_link: https://www.ecoaz.unito.it/do/storicocorsi.pl/Show?_id=5zop_2122
 tags:
-  - UniTO
   - Theory of the Firm
   - Consumer Theory
 ---

@@ -9,16 +9,8 @@ design:
 
 # Page sections
 sections:
-  - block: collection
+  # Courses from the `content/teaching/` folder, one page bundle per course (see the front matter there)
+  - block: teaching-courses
     content:
       title: Teaching
-      text:
-      count: 0
-      filters:
-        folders:
-          - teaching
-    design:
-      view: article-grid
-      fill_image: false
-      columns: 3
 ---

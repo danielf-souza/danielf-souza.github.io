@@ -208,7 +208,8 @@ code, pre {
     margin-top: 0.75rem;
 }
 
-.pub-research__links .hb-attachment-link {
+.pub-research__links .hb-attachment-link,
+.teaching-course__links .hb-attachment-link {
     display: inline-flex;
     align-items: center;
     gap: 0.3rem;
@@ -219,7 +220,8 @@ code, pre {
     border-radius: 9999px;
 }
 
-.pub-research__links .hb-attachment-link:hover {
+.pub-research__links .hb-attachment-link:hover,
+.teaching-course__links .hb-attachment-link:hover {
     color: #fff;
     background: rgb(var(--color-primary-600));
 }
@@ -250,11 +252,13 @@ code, pre {
     color: rgb(209 213 219);
 }
 
-.dark .pub-research__links .hb-attachment-link {
+.dark .pub-research__links .hb-attachment-link,
+.dark .teaching-course__links .hb-attachment-link {
     border-color: rgb(var(--color-primary-400));
 }
 
-.dark .pub-research__links .hb-attachment-link:hover {
+.dark .pub-research__links .hb-attachment-link:hover,
+.dark .teaching-course__links .hb-attachment-link:hover {
     color: rgb(17 24 39);
     background: rgb(var(--color-primary-400));
 }
@@ -525,4 +529,128 @@ a.profile-contact__item[href]:hover span {
     .profile-contact__row {
         flex-direction: column;
     }
+}
+
+/* Teaching page (layouts/partials/blox/teaching-courses.html): intro, then Current and Past Courses as a list. */
+.teaching {
+    width: 100%;
+    max-width: 56rem;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.teaching__title {
+    margin: 0 0 1rem;
+    font-size: 1.875rem;
+    font-weight: 700;
+    text-align: center;
+    color: rgb(17 24 39);
+}
+
+.teaching__intro {
+    max-width: 44rem;
+    margin: 0 auto;
+    font-size: 1.15rem;
+    line-height: 1.6;
+    text-align: center;
+    color: rgb(75 85 99);
+}
+
+.teaching__group {
+    margin-top: 3rem;
+}
+
+.teaching__group-title {
+    margin: 0;
+    padding-bottom: 0.6rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgb(17 24 39);
+    border-bottom: 2px solid rgb(229 231 235);
+}
+
+.teaching-course {
+    padding: 1.5rem 0;
+    border-bottom: 1px solid rgb(229 231 235);
+}
+
+.teaching-course:last-child {
+    border-bottom: none;
+}
+
+.teaching-course__head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 0.25rem 1.5rem;
+}
+
+.teaching-course__title {
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: rgb(17 24 39);
+}
+
+.teaching-course__period {
+    font-size: 0.95rem;
+    font-weight: 600;
+    white-space: nowrap;
+    color: rgb(var(--color-primary-700));
+}
+
+.teaching-course__institution {
+    margin-top: 0.3rem;
+    font-weight: 500;
+    color: rgb(55 65 81);
+}
+
+.teaching-course__details {
+    margin-top: 0.15rem;
+    font-size: 0.95rem;
+    color: rgb(107 114 128);
+}
+
+.teaching-course__summary {
+    margin-top: 0.6rem;
+    line-height: 1.6;
+    color: rgb(55 65 81);
+}
+
+.teaching-course__summary p {
+    margin: 0;
+}
+
+.teaching-course__links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+}
+
+.dark .teaching__title,
+.dark .teaching__group-title,
+.dark .teaching-course__title {
+    color: #fff;
+}
+
+.dark .teaching__intro,
+.dark .teaching-course__details {
+    color: rgb(156 163 175);
+}
+
+.dark .teaching-course__institution,
+.dark .teaching-course__summary {
+    color: rgb(209 213 219);
+}
+
+.dark .teaching-course__period {
+    color: rgb(var(--color-primary-400));
+}
+
+.dark .teaching__group-title,
+.dark .teaching-course {
+    border-color: rgb(55 65 81);
 }
